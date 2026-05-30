@@ -27,7 +27,8 @@ async def validation_agent(state):
     state["current_node"] = (
         "validation"
     )
-
+    if "execution_logs" not in state:
+        state["execution_logs"] = []
     state["execution_logs"].append({
     "node": "validation",
     "output": state["validation"]

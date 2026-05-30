@@ -18,7 +18,7 @@ if uploaded_file:
     ):
 
         response = requests.post(
-            "http://localhost:8000/documents/upload",
+            "https://agent-contracter.onrender.com/documents/upload",
             files={
                 "file": (
                     uploaded_file.name,

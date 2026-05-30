@@ -31,7 +31,8 @@ async def classification_agent(state):
     state["current_node"] = (
         "classification"
     )
-
+    if "execution_logs" not in state:
+        state["execution_logs"] = []
     state["execution_logs"].append({
     "node": "classification",
     "output": result.model_dump()

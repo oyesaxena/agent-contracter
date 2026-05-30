@@ -26,7 +26,8 @@ async def confidence_agent(state):
         score < 0.8
     )
     state["current_node"] = "confidence"
-
+    if "execution_logs" not in state:
+        state["execution_logs"] = []
     state["execution_logs"].append({
     "node": "confidence",
     "output": {

@@ -31,7 +31,8 @@ async def extraction_agent(state):
     state["current_node"] = (
         "extraction"
     )
-
+    if "execution_logs" not in state:
+        state["execution_logs"] = []
     state["execution_logs"].append({
     "node": "extraction",
     "output": result.model_dump()

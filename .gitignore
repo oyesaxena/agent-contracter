@@ -1,0 +1,79 @@
+# ----------------------
+# Python
+# ----------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# ----------------------
+# Environment Variables
+# ----------------------
+.env
+backend/.env
+frontend/.env
+
+# ----------------------
+# IDE
+# ----------------------
+.vscode/
+.idea/
+
+# ----------------------
+# macOS
+# ----------------------
+.DS_Store
+
+# ----------------------
+# Logs
+# ----------------------
+*.log
+logs/
+
+# ----------------------
+# Testing
+# ----------------------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ----------------------
+# Build Artifacts
+# ----------------------
+build/
+dist/
+*.egg-info/
+
+# ----------------------
+# Streamlit
+# ----------------------
+.streamlit/secrets.toml
+
+# ----------------------
+# Database
+# ----------------------
+*.db
+*.sqlite3
+
+# ----------------------
+# Uploads / Temporary Files
+# ----------------------
+uploads/
+temp/
+tmp/
+*.pdf
+
+# ----------------------
+# Jupyter
+# ----------------------
+.ipynb_checkpoints/
+
+# ----------------------
+# OS Files
+# ----------------------
+Thumbs.db
